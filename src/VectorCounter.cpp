@@ -21,7 +21,7 @@ std::vector<int> VectorCounter::CountFrequency() {
     std::vector<int> count;
     for (int i = 0; i < _list.size(); ++i) {
         int c = _list[i];
-        if (c >= count.size()+1){
+        if (c >= count.size()){
             count.resize(c+1);
         }
         count[c] += 1;
