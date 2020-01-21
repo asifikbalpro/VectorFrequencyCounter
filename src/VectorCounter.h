@@ -8,14 +8,15 @@
 #include <iostream>
 #include <vector>
 
+/// class
 class VectorCounter {
 private:
-    std::vector<int>_list;
+    std::vector<int>_list; /// vector
 
 public:
     void pushback(int a);
     void view();
-    std::vector<int> CountFrequency();
+    std::vector<int> CountFrequency(); /// function with vector
 };
 
 

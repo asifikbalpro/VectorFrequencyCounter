@@ -4,15 +4,18 @@
 
 #include "VectorCounter.h"
 
+/// pushing element to vector _list
 void VectorCounter::pushback(int a) {
     _list.push_back(a);
 }
 
+/// viewing private _list element
 void VectorCounter::view() {
     for (int i = 0; i < _list.size(); ++i) {
         std::cout<<_list[i] << std::endl;
     }
 }
+
 
 std::vector<int> VectorCounter::CountFrequency() {
     std::vector<int> count;
