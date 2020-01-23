@@ -5,8 +5,10 @@
 #include "VectorCounter.h"
 
 /// pushing element to vector _list
-void VectorCounter::pushback(int a) {
-    _list.push_back(a);
+void VectorCounter::pushBack(int a) {
+    for (int i = 0; i < a; ++i) {
+        _list.push_back(rand()% a); /// "a" is seeding value of random.
+    }
 }
 
 /// viewing private _list element
@@ -16,7 +18,7 @@ void VectorCounter::view() {
     }
 }
 
-
+/// finding the frequency of _list vector.
 std::vector<int> VectorCounter::CountFrequency() {
     std::vector<int> count;
     for (int i = 0; i < _list.size(); ++i) {

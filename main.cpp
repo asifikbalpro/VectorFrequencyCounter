@@ -5,11 +5,7 @@ int main() {
     std::cout << "Program begin !" << std::endl;
 
     VectorCounter VC;
-    VC.pushback(1);
-    VC.pushback(2);
-    VC.pushback(2);
-    VC.pushback(3);
-    VC.pushback(4);
+    VC.pushBack(10);
 
     VC.view();
 

@@ -14,7 +14,7 @@ private:
     std::vector<int>_list; /// vector
 
 public:
-    void pushback(int a);
+    void pushBack(int a);
     void view();
     std::vector<int> CountFrequency(); /// function with vector
 };
